@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,7 +9,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { TransactionComponent } from './transaction/transaction.component';
 import { SellerComponent } from './seller/seller.component';
-
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [AppComponent, TransactionComponent, SellerComponent],
   imports: [
@@ -17,6 +19,9 @@ import { SellerComponent } from './seller/seller.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
+    MatInputModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
