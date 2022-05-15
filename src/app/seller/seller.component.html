@@ -28,7 +28,7 @@
         </div>
     </div>
     <!-- multi -->
-    <div class="row" *ngIf="multi.length> 0; else emptyData">
+    <div class="row" *ngIf="multi; else emptyData">
         <ngx-charts-line-chart [view]="view" [scheme]="colorScheme" [legend]="legend" [showXAxisLabel]="showXAxisLabel"
             [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis" [xAxisLabel]="xAxisLabel"
             [yAxisLabel]="yAxisLabel" [timeline]="timeline" [results]="multi" (select)="onSelect($event)"
