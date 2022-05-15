@@ -50,8 +50,6 @@ export class TransactionComponent implements OnInit {
   onSearch() {
     this.data = null;
     if (this.validData()) {
-      console.log('Valid data');
-      console.log(this.perPage, ' page ', this.page);
       this.fetchDataFor(this.sellerId).subscribe((data) => (this.data = data));
     }
   }
