@@ -11,6 +11,8 @@ import { TransactionComponent } from './transaction/transaction.component';
 import { SellerComponent } from './seller/seller.component';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+
 @NgModule({
   declarations: [AppComponent, TransactionComponent, SellerComponent],
   imports: [
@@ -22,6 +24,7 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     FormsModule,
     HttpClientModule,
+    NgxChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
